@@ -79,7 +79,7 @@ export class Game {
       { id: 'house', room: 1, x: 840, up: 145, ch: '🏠' }, 
       { id: 'leaf', room: 1, x: 644, up: 206, scale: 2.2, ch: '🍃' }, 
       { id: 'cat', room: 2, x: 1100, up: 40, scale: 1.9, ch: '🐱' },
-      { id: 'note', room: 2, x: 420, up: 300, ch: '🌸', fixed: true },
+      { id: 'note', room: 2, x: 420, up: 250, ch: '🌸', fixed: true },
       { id: 'pack', room: 3, x: 1000, up: 80, ch: '🎒' },
     ];
     this.p.reset(64);
