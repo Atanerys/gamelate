@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Квест</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="bar hidden" id="bar">
+  <button id="pause">Пауза</button>
+  <button id="restart">Заново</button>
+  <button id="full" title="Во весь экран">⛶</button>
+</div>
+
+<div id="overlay" class="solid menu-overlay">
+  <div class="vignette"></div>
+  
+  <div class="deco-frame frame-1"><img src="img/fon1.png" alt=""></div>
+  <div class="deco-frame frame-2"><img src="img/cat.png" alt=""></div>
+  <div class="deco-frame frame-3"><img src="img/leave.png" alt=""></div>
+  <div class="deco-frame frame-4"><img src="img/door.png" alt=""></div>
+  <div class="deco-frame frame-5"><img src="img/house.png" alt=""></div>
+  
+  <div class="menu-content">
+    <h1 class="game-title">ELISE</h1>
+    <div class="title-divider"></div>
+    
+    <h2 id="ot" style="margin-top: 10px;"></h2>
+    <p id="op" style="margin-bottom: 20px;"></p>
+
+    <div class="menu-buttons" id="gMenu">
+      <button id="bPlay" class="menu-btn">НОВАЯ ИГРА</button>
+      <button class="menu-btn disabled">ПРОДОЛЖИТЬ</button>
+      <button id="bSettings" class="menu-btn">НАСТРОЙКИ</button>
+    </div>
+
+    <div class="col hidden" id="gPause">
+      <button id="bResume" class="menu-btn">Продолжить</button>
+      <button id="bRestart2" class="menu-btn">Заново</button>
+      <button id="bToMenu" class="menu-btn">В меню</button>
+    </div>
+    
+    <div class="col hidden" id="gWon">
+      <button id="bAgain" class="menu-btn">Играть ещё</button>
+      <button id="bToMenu2" class="menu-btn">В меню</button>
+    </div>
+    
+    <div class="col hidden" id="gLose">
+      <button id="bLoseAgain" class="menu-btn">Попробовать снова</button>
+      <button id="bLoseMenu" class="menu-btn">В меню</button>
+    </div>
+    
+    <div class="col hidden" id="gVol">
+      <label>🔊 <input id="vol" type="range" min="0" max="100"></label>
+      <label><input id="mute" type="checkbox"> Без звука</label>
+      <button id="bBack" class="menu-btn">Назад</button>
+    </div>
+    
+    <div class="col hidden" id="gSettings"></div>
+  </div>
+</div>
+
+<div class="pad">
+  <div><button data-k="left">◀</button><button data-k="right">▶</button></div>
+  <div><button data-k="act">E</button><button data-k="jump">⤒</button></div>
+</div>
+<p class="hint">←/→ или A/D — идти · Space/W — прыжок · E — взять/использовать · клик по двери — войти · Esc — пауза</p>
+<script type="module" src="java/main.js"></script>
+</body>
+</html>
