@@ -15,7 +15,7 @@ const DOORS = {
     { id: 'd3', x: 1300, up: 25 }, 
     { id: 'd2', x: 1650, scale: 0.6, up: 115 } 
   ],
-  3: [{ id: 'back', x: 190, up: 25 }], 
+  3: [{ id: 'back', x: 190, up: 20 }], 
 };
 
 const BEST_KEY = 'quest-best-time';
