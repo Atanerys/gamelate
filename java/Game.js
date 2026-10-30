@@ -15,7 +15,7 @@ const DOORS = {
     { id: 'd3', x: 1300, up: 25 }, 
     { id: 'd2', x: 1650, scale: 0.6, up: 115 } 
   ],
-  3: [{ id: 'back', x: 190, up: 20 }], 
+  3: [{ id: 'back', x: 190, up: 15 }], 
 };
 
 const BEST_KEY = 'quest-best-time';
@@ -79,7 +79,7 @@ export class Game {
       { id: 'house', room: 1, x: 840, up: 145, ch: '🏠' }, 
       { id: 'leaf', room: 1, x: 644, up: 206, scale: 2.2, ch: '🍃' }, 
       { id: 'cat', room: 2, x: 1100, up: 40, scale: 1.9, ch: '🐱' },
-      { id: 'note', room: 2, x: 420, up: 200, ch: '🌸', fixed: true },
+      { id: 'note', room: 2, x: 520, up: 250, ch: '🌸', fixed: true },
       { id: 'pack', room: 3, x: 1000, up: 80, ch: '🎒' },
     ];
     this.p.reset(64);
@@ -97,7 +97,7 @@ export class Game {
 
   screen(name) {
     const u = this.ui;
-    
+    // ИСПРАВЛЕНО: убрали 'gVol' из паузы
     const G = { 
       menu: ['gMenu'], 
       bye: ['gMenu'], 
